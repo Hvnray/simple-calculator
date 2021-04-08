@@ -1,6 +1,8 @@
-# Getting Started with Create React App
-
+# Simple Calculator App
+# Try it on Github Pages [hvnray.github.io](https://hvnray.github.io)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## clone project and run ` yarn install`
 
 ## Available Scripts
 
