@@ -188,6 +188,7 @@ export default function FullWidthGrid() {
     setlastInput(e);
   };
   const handleDelete = () => {
+    setlastInputAction(false);
     if (currentInput.length <= 1) {
       setResult('');
     }
@@ -196,6 +197,7 @@ export default function FullWidthGrid() {
     setCurrentInput(editedText);
   };
   const handleClear = () => {
+    setlastInputAction(false);
     setCurrentInput('');
     setResult('');
   };
