@@ -143,13 +143,16 @@ export default function FullWidthGrid() {
     input += e;
     setlastInputAction(false);
     setCurrentInput(input);
+    setlastInput(e);
   };
   const handleSmile = () => {
     setlastInputAction(false);
+    setlastInput('smile');
     setChecked((p) => !p);
   };
   const handleDot = () => {
     setlastInputAction(false);
+    setlastInput('.');
     if ('.' !== currentInput.slice(-1)) {
       setCurrentInput((input) => (input += '.'));
     }
@@ -188,6 +191,7 @@ export default function FullWidthGrid() {
     setlastInput(e);
   };
   const handleDelete = () => {
+    setlastInput('delete');
     setlastInputAction(false);
     if (currentInput.length <= 1) {
       setResult('');
@@ -200,6 +204,7 @@ export default function FullWidthGrid() {
     setlastInputAction(false);
     setCurrentInput('');
     setResult('');
+    setlastInput('clear');
   };
 
   return (
